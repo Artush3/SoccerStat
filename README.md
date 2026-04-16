@@ -86,15 +86,3 @@ npm run dev
 | Календарь лиги | `/leagues/:id` | Матчи лиги с фильтром по датам |
 | Команды | `/teams` | Список команд с поиском и пагинацией |
 | Календарь команды | `/teams/:id` | Матчи команды с фильтром по датам |
-
-## Деплой на GitHub Pages
-
-```bash
-npm install -D gh-pages
-# Добавьте в vite.config.ts: base: '/<repo>/'
-# Добавьте в package.json:
-#   "homepage": "https://<user>.github.io/<repo>"
-#   "predeploy": "npm run build"
-#   "deploy": "gh-pages -d dist"
-npm run deploy
-```
