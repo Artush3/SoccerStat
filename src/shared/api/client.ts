@@ -2,9 +2,7 @@ const TOKEN = import.meta.env.VITE_API_TOKEN as string;
 
 // In dev, Vite proxies /api → https://api.football-data.org/v4 (bypasses CORS).
 // In production, set VITE_API_BASE_URL to your backend/proxy URL.
-const BASE_URL = import.meta.env.DEV
-  ? '/api'
-  : (import.meta.env.VITE_API_BASE_URL as string);
+const BASE_URL = "/api/proxy?path=";
 
 interface FetchOptions {
   params?: Record<string, string>;
